@@ -70,9 +70,9 @@ Vagrant.configure(2) do |config|
 
     # Install dependencies
     sudo apt-get update   
-    sudo apt-get -y install build-essential curl git sudo man vim autoconf automake libtool debootstrap
+    sudo apt-get -y install build-essential curl git sudo man vim autoconf automake libtool debootstrap libarchive-dev
 
-    git clone https://github.com/gmkurtzer/singularity.git
+    git clone https://github.com/singularityware/singularity.git
     cd singularity
     ./autogen.sh
     ./configure --prefix=/usr/local
